@@ -33,7 +33,7 @@ const publicRoutes = [
     private: [
       {
         path: config.routes.admin,
-        component: Home,
+        component: ProductList,
       },
       {
         path: config.routes.producttype,
