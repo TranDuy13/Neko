@@ -4,7 +4,6 @@ import { LoginStatus } from "../hook/checkLg";
 
 const PrivateRoute=()=>{
     const {login,checking}=LoginStatus()
-    const navigate = useNavigate()
     if(checking){
         return(
             <>
