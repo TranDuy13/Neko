@@ -1,0 +1,178 @@
+.wrapper {
+    --search-border-radius: 92px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: var(--default-layout-header-height, 60px);
+    border-bottom: 1px solid rgba(22, 26, 33, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f7f4;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.nav-list {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.nav-item {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+
+    + .nav-item {
+        margin-left: 50px;
+    }
+}
+
+//About-Modal-List
+.about-modal {
+    display: none;
+}
+
+.about-modal.open {
+    display: block;
+}
+
+.about-modal.animation {
+    animation: fadeOutModal linear 0.3s 0.3s forwards;
+}
+
+.about-modal-background {
+    position: absolute;
+    top: 80px;
+    left: -1000px;
+    width: 50000px;
+    height: 100000px;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn ease 0.5s;
+}
+
+.about-modal-list {
+    position: absolute;
+    left: -34px;
+    top: 80px;
+    min-width: 160px;
+    background-color: #f8f7f4;
+    height: auto;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 5%), 0 1px 5px rgb(0 0 0 / 5%);
+    animation: slideoff ease 0.5s;
+}
+
+.about-modal-list.animation {
+    animation: fadeOut linear 0.3s 0.3s forwards;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-modal-item {
+    width: 100%;
+    display: flex;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    justify-content: center;
+    padding: 10px 24px;
+
+    &:hover {
+        background-color: #ebebeb;
+    }
+
+    &:active {
+        background-color: #007bff;
+    }
+}
+
+.about-modal-link {
+    color: rgba(22, 26, 33, 0.388);
+    font-weight: 700;
+}
+
+// end Small-Modal-List
+.line-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(1px);
+    transition: all 0.3s ease;
+}
+
+.logo-link {
+    display: flex;
+}
+
+.header-right {
+    display: flex;
+    padding-right: 50px;
+    height: 100%;
+}
+
+.cart-button {
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+
+.cart-icon {
+    padding-left: 10px;
+}
+
+.search-button {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes slideoff {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        transform: translateY(-10px);
+    }
+}
+@keyframes fadeOutModal {
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
