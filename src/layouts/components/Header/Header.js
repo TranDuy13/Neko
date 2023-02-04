@@ -1,5 +1,4 @@
 import classNames from 'classnames/bind';
-
 import 'tippy.js/dist/tippy.css';
 
 import styles from './Header.module.scss';
@@ -92,19 +91,19 @@ function Header() {
                             <div ref={aboutModalListRef} className={cx('about-modal-list')}>
                                 <div className={cx('container')}>
                                     <div className={cx('about-modal-item')}>
-                                        <a className={cx('about-modal-link')} href="/">
+                                        <Link className={cx('about-modal-link')} to="/">
                                             Blog
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={cx('about-modal-item')}>
-                                        <a className={cx('about-modal-link')} href="/">
+                                        <Link className={cx('about-modal-link')} to="/">
                                             Về chúng tôi
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={cx('about-modal-item')}>
-                                        <a className={cx('about-modal-link')} href="/">
+                                        <Link className={cx('about-modal-link')} to="/">
                                             Long & Short
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

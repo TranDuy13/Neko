@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import {
-    LeftArrowIcon,
     PackageIcon,
     ShieldIcon,
     SizeIcon,
@@ -217,24 +217,24 @@ function Profile() {
                             <p className={cx('boxContact-text')}>cskh@nekkocake.com</p>
                             <p className={cx('boxContact-text')}>0977515865</p>
                             <div className={cx('boxContact-iconSocial')}>
-                                <a className={cx('icon-social')} href="/">
+                                <Link className={cx('icon-social')} to="/">
                                     <img
                                         src="https://curnonwatch.com/_next/static/media/icon_fb.ba9f5d29.svg"
                                         alt="Icon"
                                     />
-                                </a>
-                                <a className={cx('icon-social')} href="/">
+                                </Link>
+                                <Link className={cx('icon-social')} to="/">
                                     <img
                                         src="https://curnonwatch.com/_next/static/media/icon_insta.9353e397.svg"
                                         alt="Icon"
                                     />
-                                </a>
-                                <a className={cx('icon-social')} href="/">
+                                </Link>
+                                <Link className={cx('icon-social')} to="/">
                                     <img
                                         src="https://curnonwatch.com/_next/static/media/icon_youtube.dee9fd66.svg"
                                         alt="Icon"
                                     />
-                                </a>
+                                </Link>
                             </div>
                             <div className={cx('boxContact-iconPay')}>
                                 <div className={cx('imgPay')}>
@@ -274,25 +274,25 @@ function Profile() {
                         <div className={cx('section02-leftBoxContent')}>
                             <div className={cx('leftBoxContent-list')}>
                                 <div className={cx('leftBoxContent-item')}>
-                                    <a className={cx('leftBoxContent-link')} href="/">
+                                    <Link className={cx('leftBoxContent-link')} to="/">
                                         Đồng hồ nam
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className={cx('leftBoxContent-item')}>
-                                    <a className={cx('leftBoxContent-link')} href="/">
+                                    <Link className={cx('leftBoxContent-link')} to="/">
                                         Đồng hồ nữ
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className={cx('section02-rightBoxContent')}>
-                            <a className={cx('rightBoxContent-service')} href="/">
+                            <Link className={cx('rightBoxContent-service')} to="/">
                                 Chính sách vận chuyển
-                            </a>
+                            </Link>
                             <div className={cx('rightBoxContent-aline')}></div>
-                            <a className={cx('rightBoxContent-service')} href="/">
+                            <Link className={cx('rightBoxContent-service')} to="/">
                                 Đổi trả & Bảo hành
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
