@@ -1,5 +1,6 @@
 const routes = {
     home: '/',
+    profile: '/profile',
     login:'/login',
     product:'/products',
     privateroute:'/admin',

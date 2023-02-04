@@ -1,0 +1,43 @@
+.wrapper{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.content-text{
+    width: calc((100% - 30px)/2);
+    p{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.content-number{
+    width: calc((100% - 30px)/2);
+    margin-left: 30px;
+}
+
+.boxContent{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6d6d4;
+   
+
+    .name{
+        font-size: 1.4rem;
+        margin: 14px 0;
+        line-height: 1.4rem;
+        letter-spacing: .02em;
+        color: #161a21;
+    }
+
+    .value{
+        text-transform: uppercase;
+        margin: 14px 0;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        letter-spacing: .02em;
+        color: #161a21;
+    }
+}
