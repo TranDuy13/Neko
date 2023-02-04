@@ -1,12 +1,12 @@
 import classNames from 'classnames/bind';
 import styles from './BestSellerItem.module.scss';
-
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function BestSellerItem() {
     return (
         <div className={cx('wrapper')}>
-            <a className={cx('product-image')} href="/">
+            <Link className={cx('product-image')} to="/">
                 <div className={cx('image-box')}>
                     <span className={cx('image-container')}>
                         <img
@@ -17,18 +17,18 @@ function BestSellerItem() {
                     </span>
                 </div>
                 <span className={cx('product-discount')}>-15%</span>
-            </a>
+            </Link>
             <div className={cx('product-addToCart')}>
                 <button className={cx('addToCart-btn')}>
                     <span>THÊM VÀO GIỎ HÀNG</span>
                 </button>
             </div>
-            <a href="/" className={cx('product-subtitle')}>
+            <Link to="/" className={cx('product-subtitle')}>
                 <p>Kashmir</p>
-            </a>
-            <a href="/" className={cx('product-name')}>
+            </Link>
+            <Link to="/" className={cx('product-name')}>
                 <h4>Calm</h4>
-            </a>
+            </Link>
             <div className={cx('product-price')}>
                 <span className={cx('product-price-sale')}>2.039.000&nbsp;₫</span>
                 <span className={cx('product-price-origin')}>2.399.000&nbsp;₫</span>

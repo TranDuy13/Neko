@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './HeaderModal.module.scss';
 import { useRef, useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function HeaderModal({ data, setHideHeaderModal }) {
@@ -40,9 +40,9 @@ function HeaderModal({ data, setHideHeaderModal }) {
                 <div className={cx('container')}>
                     <div className={cx('sidebar')}>
                         {data.map((item, index) => (
-                            <a
+                            <Link
                                 key={index}
-                                href="/"
+                                to="/"
                                 onMouseOver={(e) => {
                                     setContent(e.target.text);
                                 }}
@@ -51,7 +51,7 @@ function HeaderModal({ data, setHideHeaderModal }) {
                                 })}
                             >
                                 {item}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                     <div className={cx('content')}>

@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { LeftArrowIcon, PackageIcon, ShieldIcon, TopArrowIcon, TruckIcon } from '~/components/Icons';
 import styles from './Home.module.scss';
+import { Link } from 'react-router-dom';
 import BestSellerItem from './components/BestSellerItem';
 import { useEffect, useState } from 'react';
 
@@ -43,9 +44,9 @@ function Home() {
                         <div className={cx('title-content-left')}>SICILY</div>
                         <div className={cx('description-content-left')}>"TRỌN" NỮ TÍNH</div>
                         {/* <div className={cx('btn-content-left')}> */}
-                        <a href="/" className={cx('link-content-left')}>
+                        <Link to="https://www.facebook.com/" className={cx('link-content-left')}>
                             SHOP NOW
-                        </a>
+                        </Link>
                         {/* </div> */}
                     </div>
                     <div className={cx('banner-section-content-right')}></div>
@@ -81,9 +82,9 @@ function Home() {
             </div>
             <div className={cx('category-section')}>
                 <div className={cx('category-container')}>
-                    <a
+                    <Link
                         style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/nu_83e94c34eb.jpg)' }}
-                        href="/"
+                        to="/"
                         className={cx('category-link')}
                     >
                         <div className={cx('category-content')}>
@@ -92,10 +93,10 @@ function Home() {
                                 <LeftArrowIcon />
                             </div>
                         </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         style={{ backgroundImage: 'url(	https://cms.curnonwatch.com/uploads/nam_ff98c9d171.jpg)' }}
-                        href="/"
+                        to="/"
                         className={cx('category-link')}
                     >
                         <div className={cx('category-content')}>
@@ -104,10 +105,10 @@ function Home() {
                                 <LeftArrowIcon />
                             </div>
                         </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/pk_515e1b9dce.jpg)' }}
-                        href="/"
+                        to="/"
                         className={cx('category-link')}
                     >
                         <div className={cx('category-content')}>
@@ -116,18 +117,18 @@ function Home() {
                                 <LeftArrowIcon />
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={cx('menBestSeller-section')}>
                 <div className={cx('bestSeller-container')}>
                     <h3 className={cx('bestSeller-title')}>MEN'S BEST SELLERS</h3>
-                    <a href="/" className={cx('bestSeller-seeAll')}>
+                    <Link to="/" className={cx('bestSeller-seeAll')}>
                         <span className={cx('bestSeller-seeAll-test')}>XEM TẤT CẢ</span>
                         <span className={cx('bestSeller-seeAll-icon')}>
                             <LeftArrowIcon />
                         </span>
-                    </a>
+                    </Link>
                     <div className={cx('bestSeller-content')}>
                         <div className={cx('bestSeller-gallery')}>
                             <div className={cx('bestSeller-list')}>
@@ -142,12 +143,12 @@ function Home() {
             <div className={cx('womenBestSeller-section')}>
                 <div className={cx('bestSeller-container')}>
                     <h3 className={cx('bestSeller-title')}>WOMEN'S BEST SELLERS</h3>
-                    <a href="/" className={cx('bestSeller-seeAll')}>
+                    <Link to="/" className={cx('bestSeller-seeAll')}>
                         <span className={cx('bestSeller-seeAll-test')}>XEM TẤT CẢ</span>
                         <span className={cx('bestSeller-seeAll-icon')}>
                             <LeftArrowIcon />
                         </span>
-                    </a>
+                    </Link>
                     <div className={cx('bestSeller-content')}>
                         <div className={cx('bestSeller-gallery')}>
                             <div className={cx('bestSeller-list')}>
