@@ -4,6 +4,8 @@ import styles from './ProductInfo.module.scss';
 import { useEffect, useState } from 'react';
 import DetailInfo from './component/DetailInfo';
 import ShipPolicy from './component/ShipPolicy';
+import ExchangeWarranty from './component/ExchangeWarranty';
+import PayMethod from './component/PayMethod';
 
 const cx = classNames.bind(styles);
 
@@ -11,16 +13,16 @@ function ProductInfo({data}) {
 
     const [productInfoContent, setProductInfoContent] = useState('THÔNG TIN SẢN PHẨM')
 
-    const ProductInfoCOntent = () => {
+    const ProductInfoContent = () => {
         switch (productInfoContent) {
             case 'THÔNG TIN SẢN PHẨM':
                 return <DetailInfo data = {data[0]}/>
             case 'CHÍNH SÁCH VẬN CHUYỂN':
                 return <ShipPolicy />
             case 'ĐỔI TRẢ & BẢO HÀNH':
-                return <p>ĐỔI TRẢ & BẢO HÀNH</p>;
+                return <ExchangeWarranty />;
             default:
-                return <p>HÌNH THỨC THANH TOÁN</p>;
+                return <PayMethod />;
         }
     }
 
@@ -46,7 +48,7 @@ function ProductInfo({data}) {
                     </div>
                 </div>
                 <div className={cx('productInfo-content-wrapper')}>
-                    <ProductInfoCOntent />
+                    <ProductInfoContent />
                 </div>
             </div>
         </div>

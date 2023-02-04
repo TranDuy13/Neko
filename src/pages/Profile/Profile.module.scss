@@ -91,47 +91,6 @@
         margin: 0 0 0 8px;
     }
 
-    .starRating-wrapper {
-        direction: ltr;
-        display: inline-block;
-        touch-action: none;
-    }
-
-    .simpleStarRating {
-        display: inline-block;
-        overflow: hidden;
-        position: relative;
-        touch-action: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        vertical-align: middle;
-        white-space: nowrap;
-    }
-
-    .startIcon-empty {
-        color: rgb(204, 204, 204);
-        display: inline-block;
-       
-    }
-
-    .startIcon-fill {
-        left: 0px;
-        color: rgb(247, 215, 47);
-        width: 0%;
-        display: inline-block;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        white-space: nowrap;
-    }
-
-    .start-icon{
-        display: inline-block;
-        position: relative;
-        top: -2px;
-    }
-
     .boxRating-total {
         font-size: 1.4rem;
         line-height: 1.4rem;
@@ -141,6 +100,47 @@
         color: #161a21;
         margin: 0 0 0 6px;
     }
+}
+
+.starRating-wrapper {
+    direction: ltr;
+    display: inline-block;
+    touch-action: none;
+}
+
+.simpleStarRating {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.startIcon-empty {
+    color: rgb(204, 204, 204);
+    display: inline-block;
+   
+}
+
+.startIcon-fill {
+    left: 0px;
+    color: rgb(247, 215, 47);
+    width: 0%;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+
+.start-icon{
+    display: inline-block;
+    position: relative;
+    top: -2px;
 }
 
 .productDetail-statusSize {

@@ -159,7 +159,95 @@ function Profile() {
             <div className={cx('productInfo-section')}>
                <ProductInfo data ={DATA_PRODUCT_INFO} />
             </div>
-            
+            <div className={cx('review-section')}>
+                <div className={cx('review-container')}>
+                    <div className={cx('review-header')}>
+                        <div className={cx('review-boxTitle')}>
+                            <h3 className={cx('review-title')}>
+                                REVIEWS CỦA KHÁCH HÀNG
+                            </h3>
+                            <div className={cx('review-boxDescription')}>
+                                <span>
+                                    <span className={cx('starRating-wrapper')}>
+                                        <span className={cx('simpleStarRating')}>
+                                            <span className={cx('startIcon-empty')}>
+                                                <StartIcon className={cx('start-icon')} />
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                            <span className={cx('startIcon-fill')}>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <p>
+                                    Dựa trên
+                                    <span className={cx('number-review')}> 21 </span>
+                                    reviews
+                                </p>
+                            </div>
+                        </div>
+                        <div className={cx('review-boxButton')}>
+                            <button className={cx('review-btn')}>
+                                XEM TẤT CẢ
+                            </button>
+                        </div>
+                    </div>
+                    <div className={cx('review-body')}>
+                        <div className={cx('boxReview-item')}>
+                            <div className={cx('boxReview-wrapper')}>
+                                <section className={cx('boxReview-rating')}>
+                                    <span className={cx('starRating-wrapper')}>
+                                        <span className={cx('simpleStarRating')}>
+                                            <span className={cx('startIcon-empty')}>
+                                                <StartIcon className={cx('start-icon')} />
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                            <span className={cx('startIcon-fill')}>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <p>Sep 4th, 2019</p>
+                                </section>
+                                <section className={cx('boxReview-title')}>
+                                    <h3 className={cx('boxReview-title-text')}>Xin hỏi</h3>
+                                </section>
+                                <section className={cx('boxReview-detail')}>
+                                    <p className={cx('boxReview-detail-text')}>Sao không có mẫu nào automatic vậy nhĩ</p>
+                                </section>
+                                <section className={cx('boxReview-boxInfo')}>
+                                    <div className={cx('boxReview-avatar')}>
+                                        M
+                                    </div>
+                                    <div className={cx('boxReview-info')}>
+                                        <p className={cx('boxReview-name')}>
+                                            Miên
+                                        </p>
+                                        <p className={cx('boxReview-verify')}>
+                                            Đã xác thực
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className={cx('slider-section')}>
                 <div className={cx('slider-header')}>
                     <h3 className={cx('slider-title')}>BE PART OF CURNON</h3>
