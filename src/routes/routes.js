@@ -4,7 +4,7 @@ import PrivateRoute from "../pages/PrivateRoute";
 const Login = React.lazy(() => import("~/pages/Login"));
 const Product = React.lazy(() => import("~/pages/Product/Product"));
 const Home = React.lazy(() => import("~/pages/Home/Home"));
-
+const DashBoard = React.lazy(()=>import("~/pages/Dashboard"))
 const ProductList = React.lazy(() => import("~/pages/ProductList"));
 const Products = React.lazy(() => import("~/pages/Products"));
 const ProductTypeDetail = React.lazy(() => import("~/pages/ProductTypeDetail"));
@@ -33,7 +33,7 @@ const publicRoutes = [
     private: [
       {
         path: config.routes.admin,
-        component: ProductList,
+        component: DashBoard,
       },
       {
         path: config.routes.producttype,
