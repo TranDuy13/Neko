@@ -187,9 +187,9 @@ function Profile() {
                                         </span>
                                     </span>
                                 </span>
-                                <p>
+                                <p className={cx('review-boxNumber')}>
                                     Dựa trên
-                                    <span className={cx('number-review')}> 21 </span>
+                                    <span className={cx('number-review')}>&nbsp;21&nbsp;</span>
                                     reviews
                                 </p>
                             </div>
@@ -201,6 +201,94 @@ function Profile() {
                         </div>
                     </div>
                     <div className={cx('review-body')}>
+                        <div className={cx('boxReview-item')}>
+                            <div className={cx('boxReview-wrapper')}>
+                                <section className={cx('boxReview-rating')}>
+                                    <span className={cx('starRating-wrapper')}>
+                                        <span className={cx('simpleStarRating')}>
+                                            <span className={cx('startIcon-empty')}>
+                                                <StartIcon className={cx('start-icon')} />
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                            <span className={cx('startIcon-fill')}>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <p className={cx('review-time')}>Sep 4th, 2019</p>
+                                </section>
+                                <section className={cx('boxReview-title')}>
+                                    <h3 className={cx('boxReview-title-text')}>Xin hỏi</h3>
+                                </section>
+                                <section className={cx('boxReview-detail')}>
+                                    <p className={cx('boxReview-detail-text')}>Sao không có mẫu nào automatic vậy nhĩ</p>
+                                </section>
+                                <section className={cx('boxReview-boxInfo')}>
+                                    <div className={cx('boxReview-avatar')}>
+                                        M
+                                    </div>
+                                    <div className={cx('boxReview-info')}>
+                                        <p className={cx('boxReview-name')}>
+                                            Miên
+                                        </p>
+                                        <p className={cx('boxReview-verify')}>
+                                            Đã xác thực
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div className={cx('boxReview-item')}>
+                            <div className={cx('boxReview-wrapper')}>
+                                <section className={cx('boxReview-rating')}>
+                                    <span className={cx('starRating-wrapper')}>
+                                        <span className={cx('simpleStarRating')}>
+                                            <span className={cx('startIcon-empty')}>
+                                                <StartIcon className={cx('start-icon')} />
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                            <span className={cx('startIcon-fill')}>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                                <StartIcon className={cx('start-icon')}/>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <p>Sep 4th, 2019</p>
+                                </section>
+                                <section className={cx('boxReview-title')}>
+                                    <h3 className={cx('boxReview-title-text')}>Xin hỏi</h3>
+                                </section>
+                                <section className={cx('boxReview-detail')}>
+                                    <p className={cx('boxReview-detail-text')}>Sao không có mẫu nào automatic vậy nhĩ</p>
+                                </section>
+                                <section className={cx('boxReview-boxInfo')}>
+                                    <div className={cx('boxReview-avatar')}>
+                                        M
+                                    </div>
+                                    <div className={cx('boxReview-info')}>
+                                        <p className={cx('boxReview-name')}>
+                                            Miên
+                                        </p>
+                                        <p className={cx('boxReview-verify')}>
+                                            Đã xác thực
+                                        </p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
                         <div className={cx('boxReview-item')}>
                             <div className={cx('boxReview-wrapper')}>
                                 <section className={cx('boxReview-rating')}>
@@ -247,6 +335,9 @@ function Profile() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={cx('relateProduct-section')}>
+                
             </div>
             <div className={cx('slider-section')}>
                 <div className={cx('slider-header')}>
