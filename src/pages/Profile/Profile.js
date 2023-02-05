@@ -12,6 +12,7 @@ import styles from './Profile.module.scss';
 import { useEffect, useState } from 'react';
 import BoxImage from './component/BoxImage';
 import ProductInfo from './component/ProductInfo';
+import PreviousNextSection from './component/PreviousNextSection/PreviousNextSection'
 
 const cx = classNames.bind(styles);
 
@@ -337,7 +338,12 @@ function Profile() {
                 </div>
             </div>
             <div className={cx('relateProduct-section')}>
-                
+                <div className={cx('relateProduct-wrapper')}>
+                    <h2 className={cx('relateProduct-title')}>SẢN PHẨM TƯƠNG TỰ</h2>
+                    <div>
+                        <PreviousNextSection />
+                    </div>
+                </div>
             </div>
             <div className={cx('slider-section')}>
                 <div className={cx('slider-header')}>
