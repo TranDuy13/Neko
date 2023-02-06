@@ -34,7 +34,7 @@ function Header() {
             aboutModalRef.current.classList.remove(cx('open'));
             aboutModalRef.current.classList.remove(cx('animation'));
             aboutModalListRef.current.classList.remove(cx('animation'));
-        }, 600);
+        }, 400);
     };
 
     return (
@@ -52,7 +52,7 @@ function Header() {
                         }}
                     >
                         <span>NAM GIỚI</span>
-                        <img className={cx('line-nav')} src={images.lineNavbar} alt="Line" />
+                        { isMaleMenu && hideHeaderModal && <img className={cx('line-nav')} src={images.lineNavbar} alt="Line" /> }
                     </div>
                     <div
                         className={cx('nav-item')}
@@ -65,7 +65,7 @@ function Header() {
                         }}
                     >
                         <span>NỮ GIỚI</span>
-                        <img className={cx('line-nav')} src={images.lineNavbar} alt="Line" />
+                        { !isMaleMenu && hideHeaderModal && <img className={cx('line-nav')} src={images.lineNavbar} alt="Line" /> }
                     </div>
                     <div
                         onMouseOver={() => {
@@ -77,7 +77,7 @@ function Header() {
                         className={cx('nav-item')}
                     >
                         <span>VỀ CURNON</span>
-                        <img className={cx('line-nav')} src={images.lineNavbar} alt="Line" />
+                        <img className={cx('line-nav-about')} src={images.lineNavbar} alt="Line" />
                         <div
                             onMouseOver={(e) => {
                                 if (!e.target.closest(`.${cx('about-modal-list')}`)) {

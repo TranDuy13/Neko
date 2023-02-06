@@ -31,6 +31,10 @@
     + .nav-item {
         margin-left: 50px;
     }
+
+    &:hover .line-nav-about{
+        display: block;
+    }
 }
 
 //About-Modal-List
@@ -71,7 +75,7 @@
 }
 
 .about-modal-list.animation {
-    animation: fadeOut linear 0.3s 0.3s forwards;
+    animation: fadeOut linear 0.2s 0.2s forwards;
 }
 
 .container {
@@ -115,6 +119,19 @@
     width: 100%;
     transform: translateY(1px);
     transition: all 0.3s ease;
+    animation: fadeIn ease 0.5s;
+}
+
+.line-nav-about{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(1px);
+    transition: all 0.3s ease;
+    animation: fadeIn ease 0.5  s;
 }
 
 .logo-link {
