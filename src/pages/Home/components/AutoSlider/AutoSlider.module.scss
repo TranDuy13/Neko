@@ -1,0 +1,22 @@
+.slider-btn {
+    display: none;
+}
+
+.slider-boxImage-container {
+    width: 100%;
+    display: inline-block;
+    padding: 0 2.5px;
+    max-width: 280px;
+}
+
+.slider-boxImage {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+}

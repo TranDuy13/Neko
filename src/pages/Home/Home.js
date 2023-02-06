@@ -4,6 +4,7 @@ import styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
 import BestSellerItem from './components/BestSellerItem';
 import { useEffect, useState } from 'react';
+import AutoSlider from './components/AutoSlider/AutoSlider';
 
 const cx = classNames.bind(styles);
 
@@ -160,7 +161,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className={cx('campaign-section')}></div>
             <div className={cx('story-section')}>
                 <div className={cx('story-container')}>
                     <img
@@ -190,7 +190,7 @@ function Home() {
                     <p className={cx('slider-subtitle')}>Ai nói bạn không thể lựa chọn gia đình?</p>
                 </div>
                 <div className={cx('slider-body')}>
-                    <div className={cx('slider-slick')}></div>
+                    <AutoSlider />
                 </div>
             </div>
 
