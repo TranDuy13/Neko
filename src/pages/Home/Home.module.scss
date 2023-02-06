@@ -58,12 +58,15 @@
 }
 
 .description-content-left {
+    font-family: SVN-Gotham;
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 400;
     letter-spacing: 0.02em;
     margin-bottom: 40px;
+    max-width: 370px;
 }
+
 
 .link-content-left {
     min-width: 200px;
