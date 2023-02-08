@@ -21,7 +21,7 @@ function SidebarModal({ setHideSidebarModal }) {
             <div ref={wrapperRef} onClick={handleHideSidebarModal} className={cx('wrapper')}></div>
             <div ref={containerRef} className={cx('container')}>
                 <div className={cx('sidebar-header')}>
-                    <div className={cx('header-title')}>GIO HANG CUA BAN</div>
+                    <div className={cx('header-title')}>GIỎ HÀNG CỦA BẠN</div>
                     <button onClick={handleHideSidebarModal} className={cx('close-btn')}>
                         <CloseIcon />
                     </button>
