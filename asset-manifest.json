@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Neko/static/css/main.3f634ce5.css",
-    "main.js": "/Neko/static/js/main.d6f96cfa.js",
+    "main.js": "/Neko/static/js/main.678242d6.js",
     "static/css/122.535e698a.chunk.css": "/Neko/static/css/122.535e698a.chunk.css",
     "static/js/122.fb7a8aa6.chunk.js": "/Neko/static/js/122.fb7a8aa6.chunk.js",
     "static/css/760.c3136adb.chunk.css": "/Neko/static/css/760.c3136adb.chunk.css",
@@ -42,7 +42,7 @@
     "index.html": "/Neko/index.html",
     "static/media/lineNavbar.svg": "/Neko/static/media/lineNavbar.56f09ed84bf9fb714986cb78aa958927.svg",
     "main.3f634ce5.css.map": "/Neko/static/css/main.3f634ce5.css.map",
-    "main.d6f96cfa.js.map": "/Neko/static/js/main.d6f96cfa.js.map",
+    "main.678242d6.js.map": "/Neko/static/js/main.678242d6.js.map",
     "122.535e698a.chunk.css.map": "/Neko/static/css/122.535e698a.chunk.css.map",
     "122.fb7a8aa6.chunk.js.map": "/Neko/static/js/122.fb7a8aa6.chunk.js.map",
     "760.c3136adb.chunk.css.map": "/Neko/static/css/760.c3136adb.chunk.css.map",
@@ -74,6 +74,6 @@
   },
   "entrypoints": [
     "static/css/main.3f634ce5.css",
-    "static/js/main.d6f96cfa.js"
+    "static/js/main.678242d6.js"
   ]
 }
