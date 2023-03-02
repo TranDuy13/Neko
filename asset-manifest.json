@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Neko/static/css/main.3f634ce5.css",
-    "main.js": "/Neko/static/js/main.678242d6.js",
+    "main.js": "/Neko/static/js/main.7c83f8e6.js",
     "static/css/122.535e698a.chunk.css": "/Neko/static/css/122.535e698a.chunk.css",
     "static/js/122.fb7a8aa6.chunk.js": "/Neko/static/js/122.fb7a8aa6.chunk.js",
     "static/css/760.c3136adb.chunk.css": "/Neko/static/css/760.c3136adb.chunk.css",
-    "static/js/760.99d70e05.chunk.js": "/Neko/static/js/760.99d70e05.chunk.js",
+    "static/js/760.cfafce6c.chunk.js": "/Neko/static/js/760.cfafce6c.chunk.js",
     "static/css/75.bdc6c7f3.chunk.css": "/Neko/static/css/75.bdc6c7f3.chunk.css",
-    "static/js/75.96957e6e.chunk.js": "/Neko/static/js/75.96957e6e.chunk.js",
+    "static/js/75.247356ba.chunk.js": "/Neko/static/js/75.247356ba.chunk.js",
     "static/css/938.79e5a0e5.chunk.css": "/Neko/static/css/938.79e5a0e5.chunk.css",
     "static/js/938.ed3da204.chunk.js": "/Neko/static/js/938.ed3da204.chunk.js",
     "static/js/624.0a2e1227.chunk.js": "/Neko/static/js/624.0a2e1227.chunk.js",
@@ -42,13 +42,13 @@
     "index.html": "/Neko/index.html",
     "static/media/lineNavbar.svg": "/Neko/static/media/lineNavbar.56f09ed84bf9fb714986cb78aa958927.svg",
     "main.3f634ce5.css.map": "/Neko/static/css/main.3f634ce5.css.map",
-    "main.678242d6.js.map": "/Neko/static/js/main.678242d6.js.map",
+    "main.7c83f8e6.js.map": "/Neko/static/js/main.7c83f8e6.js.map",
     "122.535e698a.chunk.css.map": "/Neko/static/css/122.535e698a.chunk.css.map",
     "122.fb7a8aa6.chunk.js.map": "/Neko/static/js/122.fb7a8aa6.chunk.js.map",
     "760.c3136adb.chunk.css.map": "/Neko/static/css/760.c3136adb.chunk.css.map",
-    "760.99d70e05.chunk.js.map": "/Neko/static/js/760.99d70e05.chunk.js.map",
+    "760.cfafce6c.chunk.js.map": "/Neko/static/js/760.cfafce6c.chunk.js.map",
     "75.bdc6c7f3.chunk.css.map": "/Neko/static/css/75.bdc6c7f3.chunk.css.map",
-    "75.96957e6e.chunk.js.map": "/Neko/static/js/75.96957e6e.chunk.js.map",
+    "75.247356ba.chunk.js.map": "/Neko/static/js/75.247356ba.chunk.js.map",
     "938.79e5a0e5.chunk.css.map": "/Neko/static/css/938.79e5a0e5.chunk.css.map",
     "938.ed3da204.chunk.js.map": "/Neko/static/js/938.ed3da204.chunk.js.map",
     "624.0a2e1227.chunk.js.map": "/Neko/static/js/624.0a2e1227.chunk.js.map",
@@ -74,6 +74,6 @@
   },
   "entrypoints": [
     "static/css/main.3f634ce5.css",
-    "static/js/main.678242d6.js"
+    "static/js/main.7c83f8e6.js"
   ]
 }
