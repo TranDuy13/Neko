@@ -5,7 +5,7 @@
 
 //------------Banner-Section--------------------------------
 .banner-section {
-    height: 600px;
+    min-height: 600px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,10 +23,10 @@
     position: relative;
     width: 100%;
     max-width: 1170px;
-    height: 100%;
+    min-height: 100%;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 12px;
+    padding-top: 92px;
     padding-bottom: 32px;
     display: flex;
     color: #fff;
@@ -42,11 +42,13 @@
 }
 
 .pretitle-content-left {
+    text-align: center;
     font-size: 1.6rem;
     line-height: 1.6rem;
     font-weight: 700;
     letter-spacing: 0;
     margin-bottom: 8px;
+    font-style: normal;
 }
 
 .title-content-left {
@@ -55,14 +57,21 @@
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 12px;
+    text-align: center;
+    font-style: normal;
+    text-transform: uppercase;
 }
+
+
 
 .description-content-left {
     font-family: SVN-Gotham;
     font-size: 1.4rem;
     line-height: 2rem;
+    font-style: normal;
     font-weight: 400;
     letter-spacing: 0.02em;
+    text-align: center;
     margin-bottom: 40px;
     max-width: 370px;
 }
@@ -70,10 +79,12 @@
 
 .link-content-left {
     min-width: 200px;
+    text-transform: uppercase;
     color: #fff;
     cursor: pointer;
     border: 1px solid #f8f7f4;
     font-size: 1.4rem;
+    font-style: normal;
     line-height: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.02em;
@@ -86,6 +97,7 @@
         color: #161a21;
     }
 }
+
 .bestSeller-content{
     padding-top: 70px;
     padding-bottom: 70px;
@@ -691,4 +703,33 @@
 
 .topArrowIcon {
     transform: rotate(-90deg);
+}
+
+//----------------------Mobile-------------------------
+
+@media only screen  and (max-width:768px){
+    .banner-section-content-right{
+        display: none;
+    }
+    .banner-section-content-left{
+        width: 100%;
+    }
+    
+    .pretitle-content-left{
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+
+    .title-content-left{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+
+    .description-content-left{
+        margin-bottom: 24px;
+    }
+
+    .link-content-left{
+        min-width: 160px;
+    }
 }

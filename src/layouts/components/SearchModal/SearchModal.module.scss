@@ -15,6 +15,7 @@
     max-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
+    align-items: stretch;
     position: relative;
     box-shadow: 0 1px 5px rgb(0 0 0 / 5%), 0 1px 5px rgb(0 0 0 / 5%);
     animation: slideoff ease 0.5s;
@@ -30,7 +31,7 @@
     padding: 24px;
     width: 100%;
     max-width: 1170px;
-    height: 352px;
+    min-height: 352px;
 }
 
 .search-header {
@@ -40,7 +41,7 @@
 }
 
 .space {
-    width: 43px;
+    width: 86px;
 }
 
 .search {
@@ -73,13 +74,15 @@
 .close {
     display: flex;
     align-items: center;
+    margin-left: 40px;
 }
 
 .close-btn {
     cursor: pointer;
     font-size: 1.4rem;
+    font-style: normal;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 1.4rem;
     letter-spacing: 0.02em;
     border-bottom: 1px solid #161a21;
     color: #000;
@@ -90,7 +93,7 @@
 
 @keyframes slideoff {
     from {
-        transform: translateY(-432px);
+        transform: translateY(-100%);
         opacity: 0;
     }
     to {
@@ -101,7 +104,30 @@
 
 @keyframes fadeOut {
     to {
-        transform: translateY(-432px);
+        transform: translateY(-100%);
         opacity: 0;
     }
 }
+
+//--------------------Mobile------------------------
+@media only screen  and (max-width:768px){
+    .wrapper {  
+        top: 60px;
+    }
+
+    .space {
+        width: 0px;
+    }
+
+    .inner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: none;
+    }
+   
+}
+
