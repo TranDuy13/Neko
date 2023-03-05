@@ -4,6 +4,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 15;
     background-color: rgba(0, 0, 0, 0.4);
     animation: fadeIn ease 0.5s;
 }
@@ -55,7 +56,7 @@
 
 @keyframes slideLeft {
     from {
-        transform: translateX(400px);
+        transform: translateX(100%);
         opacity: 0;
     }
     to {
@@ -69,7 +70,7 @@
         opacity: 1;
     }
     to {
-        transform: translateX(400px);
+        transform: translateX(100%);
         opacity: 0;
     }
 }
@@ -85,5 +86,16 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+//----------------Mobile------------------
+@media only screen  and (max-width:768px){
+    .wrapper {  
+        top: 60px;
+    }
+
+    .container{
+        width: 100%;
     }
 }

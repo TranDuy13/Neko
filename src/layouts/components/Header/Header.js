@@ -40,6 +40,9 @@ function Header() {
     return (
         <>
             <header className={cx('wrapper')}>
+                <div className={cx('nav-options')}>
+                    <div>Nav</div>
+                </div>
                 <nav className={cx('nav-list')}>
                     <div
                         className={cx('nav-item')}
@@ -113,6 +116,35 @@ function Header() {
                 <Link to={config.routes.home} className={cx('logo-link')}>
                     <img src={images.logo} alt="Tiktok" />
                 </Link>
+                <div className={cx('header-right-mobile')}>
+                    <button
+                        onClick={() => {
+                            setHideSidebarModal(false);
+                            setHideHeaderModal(false);
+                            setHideSearchModal(true);
+                            aboutModalRef.current.classList.remove(cx('open'));
+                        }}
+                        className={cx('search-button')}
+                    >
+                        <SearchIcon />
+                    </button>
+                    <button
+                        onClick={() => {
+                            setHideSidebarModal(true);
+                            setHideHeaderModal(false);
+                            setHideSearchModal(false);
+                            aboutModalRef.current.classList.remove(cx('open'));
+                        }}
+                        className={cx('cart-button')}
+                    >
+                        <span className={cx('cart-icon-box')}>
+                            <CartIcon className={cx('cart-icon')} />
+                            <span className={cx('cart-number')}>
+                                2
+                            </span>
+                        </span>
+                    </button>
+                </div>
                 <nav className={cx('header-right')}>
                     <button
                         onClick={() => {
@@ -124,8 +156,11 @@ function Header() {
                         className={cx('cart-button')}
                     >
                         <span>GIỎ HÀNG</span>
-                        <span className={cx('cart-icon')}>
-                            <CartIcon />
+                        <span className={cx('cart-icon-box')}>
+                            <CartIcon className={cx('cart-icon')}/>
+                            <span className={cx('cart-number')}>
+                                2
+                            </span>
                         </span>
                     </button>
                     <button
