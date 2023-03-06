@@ -54,7 +54,17 @@ function Home() {
                 </div>
             </div>
             <div className={cx('policy-section')}>
-                <div className={cx('policy-container')}>
+                <div className={cx('policy-container-mobile')}>
+                    <div className={cx('policy-box')}>
+                        <p className={cx('policy-content')}>
+                            <span className={cx('policy-icon')}>
+                                <TruckIcon />
+                            </span>
+                            <span className={cx('policy-text')}>FREESHIP ĐƠN HÀNG &gt;700K</span>
+                        </p>
+                    </div>
+                </div>
+                <div className={cx('policy-container-desktop')}>
                     <div className={cx('policy-box')}>
                         <p className={cx('policy-content')}>
                             <span className={cx('policy-icon')}>

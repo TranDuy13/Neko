@@ -109,7 +109,17 @@
     padding: 20px 0;
     background-color: #ecebea;
 }
-.policy-container {
+
+.policy-container-mobile{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.policy-container-desktop {
     max-width: 1170px;
     margin: 0 auto;
     width: 100%;
@@ -117,6 +127,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .policy-box {
     display: flex;
     align-items: center;
@@ -733,3 +744,19 @@
         min-width: 160px;
     }
 }
+
+@media only screen  and (max-width:1024px){
+    .policy-section{
+        padding: 18px 0;
+    }
+
+    .policy-container-desktop{
+        display: none;
+    }
+
+    .policy-container-mobile{
+        display: flex;
+    }
+}
+
+
