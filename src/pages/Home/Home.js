@@ -44,11 +44,9 @@ function Home() {
                         <div className={cx('pretitle-content-left')}>NEW WOMEN COLLECTION</div>
                         <div className={cx('title-content-left')}>SICILY</div>
                         <div className={cx('description-content-left')}>"TRỌN" NỮ TÍNH</div>
-                        {/* <div className={cx('btn-content-left')}> */}
                         <Link to="https://www.facebook.com/" className={cx('link-content-left')}>
                             SHOP NOW
                         </Link>
-                        {/* </div> */}
                     </div>
                     <div className={cx('banner-section-content-right')}></div>
                 </div>
@@ -93,42 +91,42 @@ function Home() {
             </div>
             <div className={cx('category-section')}>
                 <div className={cx('category-container')}>
-                    <Link
-                        style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/nu_83e94c34eb.jpg)' }}
-                        to="/"
-                        className={cx('category-link')}
-                    >
-                        <div className={cx('category-content')}>
-                            <p className={cx('category-text')}>ĐỒNG HỒ NỮ</p>
-                            <div className={cx('category-btn')}>
-                                <LeftArrowIcon />
+                        <Link
+                            style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/nu_83e94c34eb.jpg)' }}
+                            to="/"
+                            className={cx('category-link')}
+                        >
+                            <div className={cx('category-content')}>
+                                <p className={cx('category-text')}>ĐỒNG HỒ NỮ</p>
+                                <div className={cx('category-btn')}>
+                                    <LeftArrowIcon />
+                                </div>
                             </div>
-                        </div>
-                    </Link>
-                    <Link
-                        style={{ backgroundImage: 'url(	https://cms.curnonwatch.com/uploads/nam_ff98c9d171.jpg)' }}
-                        to="/"
-                        className={cx('category-link')}
-                    >
-                        <div className={cx('category-content')}>
-                            <p className={cx('category-text')}>ĐỒNG HỒ NAM</p>
-                            <div className={cx('category-btn')}>
-                                <LeftArrowIcon />
+                        </Link>
+                        <Link
+                            style={{ backgroundImage: 'url(	https://cms.curnonwatch.com/uploads/nam_ff98c9d171.jpg)' }}
+                            to="/"
+                            className={cx('category-link')}
+                        >
+                            <div className={cx('category-content')}>
+                                <p className={cx('category-text')}>ĐỒNG HỒ NAM</p>
+                                <div className={cx('category-btn')}>
+                                    <LeftArrowIcon />
+                                </div>
                             </div>
-                        </div>
-                    </Link>
-                    <Link
-                        style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/pk_515e1b9dce.jpg)' }}
-                        to="/"
-                        className={cx('category-link')}
-                    >
-                        <div className={cx('category-content')}>
-                            <p className={cx('category-text')}>PHỤ KIỆN THỜI TRANG</p>
-                            <div className={cx('category-btn')}>
-                                <LeftArrowIcon />
+                        </Link>
+                        <Link
+                            style={{ backgroundImage: 'url(https://cms.curnonwatch.com/uploads/pk_515e1b9dce.jpg)' }}
+                            to="/"
+                            className={cx('category-link' , 'category-link-end')}
+                        >
+                            <div className={cx('category-content')}>
+                                <p className={cx('category-text')}>PHỤ KIỆN THỜI TRANG</p>
+                                <div className={cx('category-btn')}>
+                                    <LeftArrowIcon />
+                                </div>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
                 </div>
             </div>
             <div className={cx('menBestSeller-section')}>

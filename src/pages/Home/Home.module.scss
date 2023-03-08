@@ -99,9 +99,6 @@
 }
 
 .bestSeller-content{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    display: grid;
 }
 //------------------------Policy-Section--------------------------
 
@@ -164,12 +161,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
+
+// .category-box{
+//     width: 100%;
+// }
 .category-link {
     background-size: cover;
     background-position: center center;
     height: 260px;
-    width: 388px;
+    // width: 388px;
+    width: 33.33%;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -194,7 +197,11 @@
     font-weight: 500;
     font-size: 2rem;
     line-height: 2rem;
+    font-style: normal;
+    
 }
+
+
 .category-btn {
     display: flex;
     justify-content: center;
@@ -206,6 +213,8 @@
     background: transparent;
     transition: all 0.3s ease;
 }
+
+
 
 //----------------------------BestSeller-Section----------------------------
 .menBestSeller-section {
@@ -230,6 +239,7 @@
     line-height: 3.2rem;
     letter-spacing: 0.02em;
     padding: 0 0 28px;
+    text-transform: uppercase;
 }
 
 .bestSeller-seeAll {
@@ -239,6 +249,7 @@
     align-items: center;
     cursor: pointer;
 }
+
 
 .bestSeller-seeAll-test {
     font-weight: 500;
@@ -743,6 +754,17 @@
     .link-content-left{
         min-width: 160px;
     }
+    
+    .bestSeller-title {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0 0 20px;
+        font-weight: 500;
+    }
+
+    .bestSeller-seeAll {
+        margin-bottom: 36px;
+    }
 }
 
 @media only screen  and (max-width:1024px){
@@ -756,6 +778,55 @@
 
     .policy-container-mobile{
         display: flex;
+    }
+
+    .category-section{
+        padding-top: 16px;
+    }
+
+    .category-container{
+        flex-wrap: wrap;
+    }
+
+    .category-link {
+        height: 190px;
+        padding: 12px;
+        width: 49.7%;
+        & +.category-link {
+            margin-left: 0px;
+        }
+    }
+
+    .category-link-end {
+        width: 100%;
+        margin-top: 3px;
+    }
+    
+    .category-content{
+        display: block;
+    }
+
+    .category-text{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin: 0;
+        padding: 8px 0;
+        text-transform: uppercase;
+    }
+
+    .category-btn{
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+    }
+    
+    .menBestSeller-section {
+        margin: 80px 0px;
+    }
+    
+    .bestSeller-gallery {
+        padding: 0 16px;
     }
 }
 
