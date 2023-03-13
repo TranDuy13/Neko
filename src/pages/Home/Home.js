@@ -143,7 +143,8 @@ function Home() {
                             <div className={cx('bestSeller-list')}>
                                 <BestSellerItem />
                                 <BestSellerItem />
-                                <BestSellerItem />
+                                <BestSellerItem moreclassName = {cx('bottom-item')} />
+                                <BestSellerItem moreclassName = {cx('bottom-item', 'last-item')} />
                             </div>
                         </div>
                     </div>
@@ -163,7 +164,8 @@ function Home() {
                             <div className={cx('bestSeller-list')}>
                                 <BestSellerItem />
                                 <BestSellerItem />
-                                <BestSellerItem />
+                                <BestSellerItem moreclassName = {cx('bottom-item')} />
+                                <BestSellerItem moreclassName = {cx('bottom-item', 'last-item')} />
                             </div>
                         </div>
                     </div>

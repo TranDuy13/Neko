@@ -3,9 +3,11 @@ import styles from './BestSellerItem.module.scss';
 import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
-function BestSellerItem() {
+function BestSellerItem({moreclassName}) {
     return (
-        <div className={cx('wrapper')}>
+        <div className={cx('wrapper', {
+            [moreclassName] : moreclassName
+        })}>
             <Link className={cx('product-image')} to="/">
                 <div className={cx('image-box')}>
                     <span className={cx('image-container')}>
