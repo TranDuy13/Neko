@@ -20,3 +20,10 @@
     object-fit: contain;
     object-position: center center;
 }
+
+@media only screen  and (max-width:380px){
+    .slider-boxImage-container {
+        width: 100%;
+        max-width: 200px;
+    }    
+}
