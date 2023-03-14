@@ -61,3 +61,14 @@
         opacity: 1;
     }
 }
+
+//-----------------------Mobile----------------------
+
+@media only screen  and (max-width:1024px){
+    .productDetail-boxImage {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    
+}
+

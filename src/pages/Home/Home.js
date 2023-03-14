@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { LeftArrowIcon, PackageIcon, ShieldIcon, TopArrowIcon, TruckIcon } from '~/components/Icons';
+import { LeftArrowIcon, PackageIcon, ShieldIcon, TopArrowIcon } from '~/components/Icons';
 import styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
 import BestSellerItem from './components/BestSellerItem';
@@ -56,7 +56,7 @@ function Home() {
                     <div className={cx('policy-box')}>
                         <p className={cx('policy-content')}>
                             <span className={cx('policy-icon')}>
-                                <TruckIcon />
+                                <ShieldIcon />
                             </span>
                             <span className={cx('policy-text')}>FREESHIP ĐƠN HÀNG &gt;700K</span>
                         </p>
@@ -66,7 +66,7 @@ function Home() {
                     <div className={cx('policy-box')}>
                         <p className={cx('policy-content')}>
                             <span className={cx('policy-icon')}>
-                                <TruckIcon />
+                                <ShieldIcon />
                             </span>
                             <span className={cx('policy-text')}>FREESHIP ĐƠN HÀNG &gt;700K</span>
                         </p>
