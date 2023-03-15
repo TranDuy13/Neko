@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 16px;
 }
 .mainImage {
     display: none;
@@ -70,5 +71,27 @@
         padding-bottom: 0px;
     }
     
+    .boxImage-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .thumbImage-list {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .thumbImage-item {
+        padding: 0px;
+
+        & + .thumbImage-item {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media only screen  and (max-width:600px){
+    .mainImage-wrapper {
+        padding: 0px 3px;
+    }
 }
 
