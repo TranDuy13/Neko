@@ -36,6 +36,14 @@ export default class PreviousNextSection extends Component {
             slidesToScroll: 1,
             nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                  }
+                },
+            ]
         };
         return (
             <div>

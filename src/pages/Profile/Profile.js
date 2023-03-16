@@ -344,6 +344,9 @@ function Profile() {
                             </div>
                         </div>
                     </div>
+                    <div className={cx('reviewList-boxButtonMobile')}>
+                        <button className={cx('reviewList-buttonMobile')}>XEM TẤT CẢ</button>
+                    </div>
                 </div>
             </div>
             <div className={cx('relateProduct-section')}>

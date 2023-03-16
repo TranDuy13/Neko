@@ -84,7 +84,7 @@
         padding: 0px;
 
         & + .thumbImage-item {
-            margin-left: 10px;
+            margin-left: 20px;
         }
     }
 }
@@ -93,5 +93,43 @@
     .mainImage-wrapper {
         padding: 0px 3px;
     }
+
+    .mainImage {
+        width: auto;
+        height: 450px;
+    }
+    .thumbImage-item {
+        width: 65px;
+
+    & + .thumbImage-item {
+            margin-left: 15px;
+        }
+    }
+
+    .thumbImage {
+        height: 65px;
+        width: 65px;
+    }
 }
+
+@media only screen  and (max-width:495px){
+    .mainImage {
+        width: auto;
+        height: 350px;
+    }
+
+    .thumbImage-item {
+        width: 60px;
+
+        & + .thumbImage-item {
+            margin-left: 10px;
+        }
+    }
+
+    .thumbImage {
+        height: 60px;
+        width: 60px;
+    }
+}
+
 
