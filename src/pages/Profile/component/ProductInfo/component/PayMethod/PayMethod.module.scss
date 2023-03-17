@@ -40,3 +40,10 @@
     letter-spacing: .02em;
     color: #161a21;
 }
+
+@media only screen  and (max-width:1024px){
+    .wrapper{
+        padding: 20px 0 15px;
+    }
+    
+}

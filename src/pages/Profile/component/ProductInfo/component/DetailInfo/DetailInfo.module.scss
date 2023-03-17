@@ -41,3 +41,37 @@
         color: #161a21;
     }
 }
+
+@media only screen  and (max-width:1140px){
+    .content-text{
+        p{
+           font-size: 1.4rem;
+        }
+    }
+}
+
+@media only screen  and (max-width:1024px){
+    .wrapper{
+        padding: 20px 0 15px;
+        display: block;
+    }
+
+    .content-text{
+        width: 100%;
+        p{
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            letter-spacing: .02em;
+            color: #161a21;
+            padding: 0;
+            margin: 0 0 10px;
+        }
+    }
+
+    .content-number{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+

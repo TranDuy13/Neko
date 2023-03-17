@@ -269,3 +269,18 @@ export const LeftIcon = ({ className, width = '0.7rem', height = '1.2rem' }) => 
         ></path>
     </svg>
 );
+export const PlusIcon = ({ className, width = '1rem', height = '1rem' }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width={width} height={height} viewBox="0 0 10 10" fill="none">
+<g opacity="0.6">
+<path d="M0 4.58334L10 4.58334V5.41667H1.05367e-07L0 4.58334Z" fill="#161A21"/>
+<path d="M5.41666 10V0H4.58333V10H5.41666Z" fill="#161A21"/>
+</g>
+</svg>
+);
+export const MinusIcon = ({ className, width = '1rem', height = '0.1rem' }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} width={width} height={height} viewBox="0 0 10 1" fill="none">
+    <path d="M0 0L10 5.72203e-07V1H1.05367e-07L0 0Z" fill="#161A21"/>
+    </svg>
+);
+
+
